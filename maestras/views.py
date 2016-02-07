@@ -1,12 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 # Create your views here.
-class Country(models.Model):
-	name = model.ChartField(max_lenght=50)
-	iso = model.ChartField(max_lenght=4)
-
-	def __str__(self):
-		return name
-
-	class Meta:
-			verbose_name_plural = "Countries"
+def index(request):
+	n = 1
+	z = 0
+	import pdb; pdb.set_trace()
+	a = n/z
+	
+	HttpResponse("a = " + a)
